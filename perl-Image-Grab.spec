@@ -6,7 +6,8 @@ Summary(pl):	Modu³ perla Image::Grab
 Name:		perl-Image-Grab
 Version:	1.4
 Release:	2
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	aa621cbb6821d35ba6d48d90b1b3372e
