@@ -3,7 +3,7 @@ Summary:	Image-Grab perl module
 Summary(pl):	Modu³ perla Image-Grab
 Name:		perl-Image-Grab
 Version:	1.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -18,6 +18,7 @@ BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-MIME-Base64
 BuildRequires:	perl-URI
 BuildRequires:	perl-Digest-MD5
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
