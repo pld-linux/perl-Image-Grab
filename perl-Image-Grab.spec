@@ -4,8 +4,8 @@
 Summary:	Image::Grab perl module
 Summary(pl):	Modu³ perla Image::Grab
 Name:		perl-Image-Grab
-Version:	1.3
-Release:	5
+Version:	1.4
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -48,5 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %{perl_sitelib}/Image/Grab.pm
+%{perl_sitelib}/Image/Grab.pod
 %{perl_sitelib}/Image/Grab
 %{_mandir}/man3/*
