@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla Image-Grab
 Name:		perl-Image-Grab
 Version:	0.9.5
 Release:	1
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Image/Image-Grab-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Image/Image-Grab-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-libwww
@@ -22,7 +22,7 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Image-Grab is a perl module for Grabbing images off the Internet. 
+Image-Grab is a perl module for Grabbing images off the Internet.
 
 %description -l pl
 Image-Grab jest modu³em do ¶ci±gania obrazków z Internetu.
