@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	Image-Grab perl module
 Summary(pl):	Modu³ perla Image-Grab
 Name:		perl-Image-Grab
@@ -8,7 +8,8 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Image/Image-Grab-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-libwww
 BuildRequires:	perl-libnet
 BuildRequires:	perl-HTML-Tree
@@ -18,13 +19,6 @@ BuildRequires:	perl-URI
 BuildRequires:	perl-Digest-MD5
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-Requires:	perl-libwww
-Requires:	perl-libnet
-Requires:	perl-HTML-Tree
-Requires:	perl-HTML-Parser
-Requires:	perl-MIME-Base64
-Requires:	perl-URI
-Requires:	perl-Digest-MD5
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
