@@ -2,21 +2,27 @@
 Summary:	Image-Grab perl module
 Summary(pl):	Modu³ perla Image-Grab
 Name:		perl-Image-Grab
-Version:	0.9.2
-Release:	3
+Version:	0.9.5
+Release:	1
 Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Image/Image-Grab-%{version}.tar.gz
 BuildRequires:	perl >= 5.005_03-10
 BuildRequires:	perl-libwww
+BuildRequires:	perl-libnet
 BuildRequires:	perl-HTML-Tree
+BuildRequires:	perl-HTML-Parser
+BuildRequires:	perl-MIME-Base64
 BuildRequires:	perl-URI
 BuildRequires:	perl-Digest-MD5
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Requires:	perl-libwww
+Requires:	perl-libnet
 Requires:	perl-HTML-Tree
+Requires:	perl-HTML-Parser
+Requires:	perl-MIME-Base64
 Requires:	perl-URI
 Requires:	perl-Digest-MD5
 BuildRoot:	/tmp/%{name}-%{version}-root
