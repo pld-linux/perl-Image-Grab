@@ -32,7 +32,7 @@ Image-Grab jest modu³em do ¶ci±gania obrazków z Internetu.
 %setup -q -n Image-Grab-%{version}
 
 %build
-perl Makefile.PL
+echo "N" | perl Makefile.PL
 %{__make}
 
 %install
@@ -50,5 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %{perl_sitelib}/Image/Grab.pm
 %{perl_sitelib}/Image/Grab
-%{perl_sitelib}/auto/Image/Grab
 %{_mandir}/man3/*
