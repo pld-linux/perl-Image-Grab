@@ -5,7 +5,7 @@ Summary:	Image::Grab perl module
 Summary(pl):	Modu³ perla Image::Grab
 Name:		perl-Image-Grab
 Version:	1.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -17,7 +17,7 @@ BuildRequires:	perl-MIME-Base64
 BuildRequires:	perl-URI
 BuildRequires:	perl-libnet
 BuildRequires:	perl-libwww
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,7 +31,8 @@ Image::Grab jest modu³em do ¶ci±gania obrazków z Internetu.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-echo "N" | perl Makefile.PL
+echo "N" | perl Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
@@ -45,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{perl_sitelib}/Image/Grab.pm
-%{perl_sitelib}/Image/Grab.pod
-%{perl_sitelib}/Image/Grab
+%{perl_vendorlib}/Image/Grab.pm
+%{perl_vendorlib}/Image/Grab.pod
+%{perl_vendorlib}/Image/Grab
 %{_mandir}/man3/*
