@@ -2,7 +2,7 @@
 Summary:	Image-Grab perl module
 Summary(pl):	Modu³ perla Image-Grab
 Name:		perl-Image-Grab
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
