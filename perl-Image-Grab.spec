@@ -9,15 +9,15 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
-BuildRequires:	perl-libwww
-BuildRequires:	perl-libnet
-BuildRequires:	perl-HTML-Tree
+BuildRequires:	perl-Digest-MD5
 BuildRequires:	perl-HTML-Parser
+BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-MIME-Base64
 BuildRequires:	perl-URI
-BuildRequires:	perl-Digest-MD5
+BuildRequires:	perl-libnet
+BuildRequires:	perl-libwww
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,14 +39,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf ChangeLog README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc ChangeLog README
 %{perl_sitelib}/Image/Grab.pm
 %{perl_sitelib}/Image/Grab.pod
 %{perl_sitelib}/Image/Grab
