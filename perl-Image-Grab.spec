@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Image
 %define	pnam	Grab
-%include	/usr/lib/rpm/macros.perl
 Summary:	Image-Grab perl module
 Summary(pl):	Modu³ perla Image-Grab
 Name:		perl-Image-Grab
 Version:	1.3
-Release:	4
-
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -29,7 +28,7 @@ Image-Grab is a perl module for Grabbing images off the Internet.
 Image-Grab jest modu³em do ¶ci±gania obrazków z Internetu.
 
 %prep
-%setup -q -n Image-Grab-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 echo "N" | perl Makefile.PL
