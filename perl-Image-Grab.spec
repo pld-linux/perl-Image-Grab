@@ -6,7 +6,7 @@
 %define		pdir	Image
 %define		pnam	Grab
 Summary:	Image::Grab perl module
-Summary(pl):	Modu≥ perla Image::Grab
+Summary(pl.UTF-8):   Modu≈Ç perla Image::Grab
 Name:		perl-Image-Grab
 Version:	1.4.2
 Release:	1
@@ -30,8 +30,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Image::Grab is a perl module for Grabbing images off the Internet.
 
-%description -l pl
-Image::Grab jest modu≥em do ∂ci±gania obrazkÛw z Internetu.
+%description -l pl.UTF-8
+Image::Grab jest modu≈Çem do ≈õciƒÖgania obrazk√≥w z Internetu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
