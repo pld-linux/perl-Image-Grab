@@ -6,7 +6,7 @@
 %define		pdir	Image
 %define		pnam	Grab
 Summary:	Image::Grab perl module
-Summary(pl.UTF-8):   Moduł perla Image::Grab
+Summary(pl.UTF-8):	Moduł perla Image::Grab
 Name:		perl-Image-Grab
 Version:	1.4.2
 Release:	1
