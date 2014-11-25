@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Image
 %define		pnam	Grab
+%include	/usr/lib/rpm/macros.perl
 Summary:	Image::Grab perl module
 Summary(pl.UTF-8):	Moduł perla Image::Grab
 Name:		perl-Image-Grab
@@ -15,12 +15,13 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8a62dcff23997e525f7557451f5758dd
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Image-Grab/
 BuildRequires:	perl-Digest-MD5
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-MIME-Base64
 BuildRequires:	perl-URI
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-libnet
 BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov >= 4.1-13
