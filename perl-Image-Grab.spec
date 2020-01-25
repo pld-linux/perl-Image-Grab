@@ -4,7 +4,6 @@
 
 %define		pdir	Image
 %define		pnam	Grab
-%include	/usr/lib/rpm/macros.perl
 Summary:	Image::Grab perl module
 Summary(pl.UTF-8):	Moduł perla Image::Grab
 Name:		perl-Image-Grab
